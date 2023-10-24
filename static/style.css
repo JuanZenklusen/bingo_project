@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-weight: 800;
+}
+
+html, body{
+    margin: 0px;
+    background-color: rgb(27, 27, 27);
+}
+
+.contenedor{
+    width: 99vw;
+    height: 100vh;
+    margin: auto;
+}
+/* 
+div .p-2{
+    border: 1px solid blue;
+    font-size: 2.2rem;
+} */
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+}
+
+.index {
+    text-align: center;
+}
+
+.topper{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "izq cen der";
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 2rem;
+}
+
+.izq{
+    grid-area: 'izq';
+    width: 100%;
+    background-color: rgb(0, 255, 0);
+    color: black;
+}
+
+.cen{
+    grid-area: 'cen';
+    width: 100%;
+    background-color: rgb(1, 61, 1);
+    font-size: 2.7rem;
+}
+
+.der{
+    grid-area: 'der';
+    background-color: rgb(0, 255, 0);
+    color: black;
+}
+
+.topper2{
+    width: 100%;
+}
+
+.large{
+    width: 100%;
+    background-color: rgb(27, 85, 0);
+    font-size: 1.5rem;
+}
+
+.topper h1{
+    font-size: 2rem;
+}
+
+.content{
+    padding: 0;
+}
+
+.d-flex {
+    display: flex;
+    align-items: stretch; /* Asegura que los elementos se estiren para ocupar todo el alto disponible */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-2 {
+    padding: 0 !important;
+    font-size: 2.8rem;
+    border: 1px solid #353535; /* Añade un borde para visualización */
+    display: flex; /* Permite que los elementos dentro se estiren para ocupar todo el alto disponible */
+    align-items: center; /* Centra el texto verticalmente dentro del contenedor */
+    justify-content: center; /* Centra el texto horizontalmente dentro del contenedor */
+}
+
+.flex-fill {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-fill div {
+    width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+    height: 100%; /* Asegura que el texto ocupe todo el alto disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Elimina el espaciado por encima y por debajo del texto */
+}
+
+.act{
+    background-color: yellow;
+    color: black;
+}

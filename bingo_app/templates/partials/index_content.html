@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block 'title' %}Index{% endblock %}
+
+
+{% block 'content' %}
+
+    <div class="centered-content">
+        <div class="index">
+            <div class="link">
+                <a href="{% url 'sorteo' %}">ir al sorteo</a>
+                <a href="{% url 'bingo' %}">ir al bingo</a>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

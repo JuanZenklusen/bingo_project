@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block 'title' %}SORTEO{% endblock %}
+
+{% block 'content' %}
+
+    <div class="topper2">
+        <div class="large text-center">Ultimos {{ ult5 }}</div>
+    </div>
+
+    <div class="content">  
+        {% include 'partials/nros.html' %}
+    </div>
+
+    <script>
+        setInterval(function(){
+            location.reload();
+        }, 3000);
+    </script>
+
+{% endblock %}
