@@ -5,11 +5,16 @@
 
 {% block 'content' %}
 
-    <div class="centered-content">
-        <div class="index">
+
+<div class="centered-content">
+    <div class="index">
+            <img style="height: 200px;" src="/media/Choribingo logo.png"><br><br><br>
             <div class="link">
-                <a href="{% url 'sorteo' %}">ir al sorteo</a>
-                <a href="{% url 'bingo' %}">ir al bingo</a>
+                <a style="font-size: 50px;" href="{% url 'sorteo' %}">Ir al sorteo</a> 
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a style="font-size: 50px;" href="{% url 'bingo' %}">Ir al bingo</a>
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a style="font-size: 50px;" href="{% url 'premios' %}" id="premios">Sortear premios</a>
             </div>
         </div>
     </div>

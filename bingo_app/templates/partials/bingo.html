@@ -3,28 +3,30 @@
 {% block 'title' %}BINGO{% endblock %}
 
 {% block 'content' %}
-    <div class="topper">
-        <div class="izq text-center">{{ ult5 }}</div>
-        <div class="cen text-center">{{ int_nro }}</div>
-        <div class="der text-center"> 
 
-            <form method="POST">
-                {% csrf_token %}
-                <button type="submit" name="siguiente">Siguiente</button>
-            </form>
-
-        </div>
+<div class="topper">
+    <div class="izq text-center">{{ ult5 }}</div>
+    <div class="cen text-center">{{ int_nro }}</div>
+    <div class="der text-center"> 
+        
+        <form method="POST">
+            {% csrf_token %}
+            <a href="{% url 'alerta_linea' %}">LINEA</a> &nbsp;
+            <a href="{% url 'alerta_bingo' %}">BINGO</a>&nbsp; &nbsp;
+            <button type="submit" name="siguiente"> >> </button>
+        </form>
+        
     </div>
+</div>
 
-    <div class="content">  
-        {% include 'partials/nros.html' %}
-    </div>
-
+<div class="content">  
+    {% include 'partials/nros.html' %}
+</div>
     
-    <div class="sorteo">
-        {{ bol }} <br>
-        {{ int_nro }} <br>
-        {{ nro_sort }}
-    </div>
-    
+{% endblock %}
+
+{% block 'scripts' %}
+
+
+
 {% endblock %}

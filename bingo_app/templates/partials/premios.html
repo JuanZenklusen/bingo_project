@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block 'title' %}BINGO{% endblock %}
+
+{% block 'content' %}
+<div class="container text-center">
+
+    <div style="font-size: 240px; height: 50vh;" class="text-center premio-sort">
+        {{int_nro}}
+    </div>
+    
+    <div style="font-size: 120px; height: 40vh;" class="text-center">
+        <form method="POST">
+            {% csrf_token %}
+            <button style="font-size: 50px;" type="submit" name="siguientee"> SORTEAR </button>
+        </form>
+    </div>
+
+    
+    
+</div>
+
+{% endblock %}
